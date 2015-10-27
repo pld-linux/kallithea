@@ -1,4 +1,6 @@
-# TODO: everything
+# TODO:
+# - everything
+# - relax python deps?
 #
 # Conditional build:
 %bcond_without	doc		# don't build doc
@@ -15,17 +17,45 @@ Source0:	https://pypi.python.org/packages/source/K/Kallithea/Kallithea-%{version
 Patch0:		%{name}-build.patch
 URL:		https://kallithea-scm.org/
 BuildRequires:	docutils
-BuildRequires:	mercurial >= 2.9
+BuildRequires:	python-Beaker = 1.6.4
+BuildRequires:	python-Mako <= 1.0.0
+BuildRequires:	python-Mako >= 0.9.0
 BuildRequires:	python-Paste
 BuildRequires:	python-PasteDeploy
 BuildRequires:	python-PasteScript
+BuildRequires:	python-Pylons <= 1.0.2
+BuildRequires:	python-Pylons >= 1.0.0
+BuildRequires:	python-Routes = 1.13
 BuildRequires:	python-Routes >= 1.13
+BuildRequires:	python-SQLAlchemy = 0.7.10
+BuildRequires:	python-URLObject = 2.3.4
+BuildRequires:	python-WebHelpers = 1.3
 BuildRequires:	python-WebOb
+BuildRequires:	python-babel <= 1.3
+BuildRequires:	python-babel >= 0.9.6
 BuildRequires:	python-bcrypt >= 1.1.1
+BuildRequires:	python-celery < 2.3
+BuildRequires:	python-celery >= 2.2.5
+BuildRequires:	python-dateutil <2.0.0
+BuildRequires:	python-dateutil >= 1.5.0
 BuildRequires:	python-devel
+BuildRequires:	python-docutils >= 0.8.1
 BuildRequires:	python-dulwich <= 0.9.9
 BuildRequires:	python-dulwich >= 0.9.9
+BuildRequires:	python-formencode <=1.2.6
+BuildRequires:	python-formencode >= 1.2.4
+BuildRequires:	python-markdown = 2.2.1
+BuildRequires:	python-mercurial < 3.6
+BuildRequires:	python-mercurial >= 2.9
+BuildRequires:	python-mock
+BuildRequires:	python-pygments >= 1.5
 BuildRequires:	python-setuptools
+BuildRequires:	python-waitress = 0.8.8
+BuildRequires:	python-webob <= 1.1.1
+BuildRequires:	python-webob >= 1.0.8
+BuildRequires:	python-webtest = 1.4.3
+BuildRequires:	python-whoosh <= 2.5.7
+BuildRequires:	python-whoosh >= 2.4.0
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.612
 Requires:	python-modules
