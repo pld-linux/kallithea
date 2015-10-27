@@ -1,0 +1,21 @@
+diff -ur Kallithea-0.3.org/setup.py Kallithea-0.3/setup.py
+--- Kallithea-0.3.org/setup.py	2015-10-02 21:53:02.000000000 +0200
++++ Kallithea-0.3/setup.py	2015-10-27 10:36:19.060654069 +0100
+@@ -50,7 +50,7 @@
+     "babel>=0.9.6,<=1.3",
+     "python-dateutil>=1.5.0,<2.0.0",
+     "markdown==2.2.1",
+-    "docutils>=0.8.1,<=0.11",
++    "docutils>=0.8.1",
+     "mock",
+     "URLObject==2.3.4",
+     "Routes==1.13",
+@@ -64,7 +64,7 @@
+     requirements.append("argparse")
+ 
+ if not is_windows:
+-    requirements.append("py-bcrypt>=0.3.0,<=0.4")
++    requirements.append("bcrypt>=1.1.1")
+ 
+ 
+ dependency_links = [
