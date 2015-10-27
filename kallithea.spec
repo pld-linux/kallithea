@@ -23,7 +23,8 @@ BuildRequires:	python-Routes >= 1.13
 BuildRequires:	python-WebOb
 BuildRequires:	python-bcrypt >= 1.1.1
 BuildRequires:	python-devel
-BuildRequires:	python-dulwich
+BuildRequires:	python-dulwich <= 0.9.9
+BuildRequires:	python-dulwich >= 0.9.9
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.612
